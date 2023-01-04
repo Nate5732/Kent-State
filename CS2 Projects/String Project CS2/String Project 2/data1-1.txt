@@ -1,0 +1,17 @@
+Nathon Computer test 97830 laptop phone
+
+
+String::String(const char s[]) {
+    int size = 0;
+    while (s[size] != '\0') {
+        size++;
+    }
+    
+    stringSize = size + 1;
+    str = new char[stringSize];
+    int i;
+    for (i = 0; i < stringSize; ++i) {
+        str[i] = s[i];
+    }
+    str[i] = '\0';
+}
