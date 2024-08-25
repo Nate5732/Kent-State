@@ -1,0 +1,24 @@
+Nathon Iadimarco CS3
+
+10555 9 55 2 103 7
+STL sorted
+2 7 9 55 103 10555
+
+10555 9 55 2 103 7
+bubble sorted
+2 7 9 55 103 10555
+
+10555 9 55 2 103 7
+insertion sorted
+2 7 9 55 103 10555
+
+standard sort ran for 0.000973333 seconds
+bubble sort ran for 20.1644 seconds
+insertion sort ran for 10.9868 seconds
+sorted vectors are the same
+Program ended with exit code: 0
+
+
+It seems that standard sort wins for being the fastest by a long shot at 0.00097 seconds.
+Insertion sort comes in second by running for 10.99 seconds, and
+last is bubble sort because it took a little under double the amount of time insertion sort did at 20.16 seconds.
