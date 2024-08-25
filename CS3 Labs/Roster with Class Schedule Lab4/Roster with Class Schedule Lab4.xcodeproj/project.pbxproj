@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E5EDFA42B7D3AF900DF38D0 /* rosterObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E5EDFA32B7D3AF900DF38D0 /* rosterObject.cpp */; };
+		9E5EDFAC2B7D3B2D00DF38D0 /* roster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E5EDFAA2B7D3B2D00DF38D0 /* roster.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9E5EDF9E2B7D3AF900DF38D0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9E5EDFA02B7D3AF900DF38D0 /* Roster with Class Schedule Lab4R */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Roster with Class Schedule Lab4R"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E5EDFA32B7D3AF900DF38D0 /* rosterObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rosterObject.cpp; sourceTree = "<group>"; };
+		9E5EDFAA2B7D3B2D00DF38D0 /* roster.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = roster.cpp; sourceTree = "<group>"; };
+		9E5EDFAD2B7D3B9E00DF38D0 /* cs1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = cs1.txt; sourceTree = "<group>"; };
+		9E5EDFAE2B7D3BB600DF38D0 /* cs2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cs2.txt; sourceTree = "<group>"; };
+		9E5EDFAF2B7D3BC300DF38D0 /* cs3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cs3.txt; sourceTree = "<group>"; };
+		9E5EDFB02B7D3BD500DF38D0 /* cs4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cs4.txt; sourceTree = "<group>"; };
+		9E5EDFB12B7D3BE500DF38D0 /* dropouts.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dropouts.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E5EDF9D2B7D3AF900DF38D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E5EDF972B7D3AF900DF38D0 = {
+			isa = PBXGroup;
+			children = (
+				9E5EDFA22B7D3AF900DF38D0 /* Roster with Class Schedule Lab4R */,
+				9E5EDFA12B7D3AF900DF38D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E5EDFA12B7D3AF900DF38D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E5EDFA02B7D3AF900DF38D0 /* Roster with Class Schedule Lab4R */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E5EDFA22B7D3AF900DF38D0 /* Roster with Class Schedule Lab4R */ = {
+			isa = PBXGroup;
+			children = (
+				9E5EDFA32B7D3AF900DF38D0 /* rosterObject.cpp */,
+				9E5EDFAA2B7D3B2D00DF38D0 /* roster.cpp */,
+				9E5EDFAD2B7D3B9E00DF38D0 /* cs1.txt */,
+				9E5EDFAE2B7D3BB600DF38D0 /* cs2.txt */,
+				9E5EDFAF2B7D3BC300DF38D0 /* cs3.txt */,
+				9E5EDFB02B7D3BD500DF38D0 /* cs4.txt */,
+				9E5EDFB12B7D3BE500DF38D0 /* dropouts.txt */,
+			);
+			path = "Roster with Class Schedule Lab4R";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E5EDF9F2B7D3AF900DF38D0 /* Roster with Class Schedule Lab4R */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E5EDFA72B7D3AF900DF38D0 /* Build configuration list for PBXNativeTarget "Roster with Class Schedule Lab4R" */;
+			buildPhases = (
+				9E5EDF9C2B7D3AF900DF38D0 /* Sources */,
+				9E5EDF9D2B7D3AF900DF38D0 /* Frameworks */,
+				9E5EDF9E2B7D3AF900DF38D0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Roster with Class Schedule Lab4R";
+			productName = "Roster with Class Schedule Lab4R";
+			productReference = 9E5EDFA02B7D3AF900DF38D0 /* Roster with Class Schedule Lab4R */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E5EDF982B7D3AF900DF38D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					9E5EDF9F2B7D3AF900DF38D0 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 9E5EDF9B2B7D3AF900DF38D0 /* Build configuration list for PBXProject "Roster with Class Schedule Lab4R" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E5EDF972B7D3AF900DF38D0;
+			productRefGroup = 9E5EDFA12B7D3AF900DF38D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E5EDF9F2B7D3AF900DF38D0 /* Roster with Class Schedule Lab4R */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E5EDF9C2B7D3AF900DF38D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E5EDFAC2B7D3B2D00DF38D0 /* roster.cpp in Sources */,
+				9E5EDFA42B7D3AF900DF38D0 /* rosterObject.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9E5EDFA52B7D3AF900DF38D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9E5EDFA62B7D3AF900DF38D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9E5EDFA82B7D3AF900DF38D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9E5EDFA92B7D3AF900DF38D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E5EDF9B2B7D3AF900DF38D0 /* Build configuration list for PBXProject "Roster with Class Schedule Lab4R" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E5EDFA52B7D3AF900DF38D0 /* Debug */,
+				9E5EDFA62B7D3AF900DF38D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E5EDFA72B7D3AF900DF38D0 /* Build configuration list for PBXNativeTarget "Roster with Class Schedule Lab4R" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E5EDFA82B7D3AF900DF38D0 /* Debug */,
+				9E5EDFA92B7D3AF900DF38D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E5EDF982B7D3AF900DF38D0 /* Project object */;
+}
