@@ -1,5 +1,0 @@
-user_id,username,password_hash,group_type
-1,admin_username,hashed_password_here,H
-2,Nate5732,$2y$10$f5GZMP5mnGeWheV947IpFe2zaiwPlbVQ.uy8vTbaoMh1MxAgr4J2a,H
-3,Ruser,$2y$10$7fF3AElXgBbQGD44M5xsDeK/VTI7dZsWHKs9jEwqSvMMqXjHSGWDC,R
-4,Test,$2y$10$YLhZUZIwK74JDwNAv7EtleLY3sXZyShRa9okhDfHEf6y98wuqAmTC,R
