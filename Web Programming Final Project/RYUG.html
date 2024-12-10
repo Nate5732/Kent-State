@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="countWords()">
+    <header>
+            <nav class="navbar">
+                <img src="assets/Logo.jpeg" alt="RYUG Logo" class="nav-logo">
+                <div class="navbar-header">
+                    <h1>RYUG Store</h1>
+                </div>
+                <div class="nav-links">
+                    <a href="RYUG.html" class="active">Home</a>
+                    <a href="history.html">History</a>
+                    <a href="discount.html">Discounts</a>
+                    <a href="items.html">Items</a>
+                    <a href="login.html">Logout</a>
+                </div>
+            </nav>
+        </header>
+        
+    <main>
+        <h2>Welcome to RYUG!</h2>
+        <div><p><u>Check out some of our featured products below</u></p></div>
+            <div class="product">
+                <img src="assets/coat.jpeg" alt="Product Image">
+                <div class="text">
+                    <p>Check out this fancy winter coat that will have you looking fresh for the winter season!</p>
+                    <button onclick="window.location.href='items.html';" class="navigate-button">Go to Items</button>
+
+                </div>
+                <img src="assets/jeans.jpeg" alt="Product Image">
+                <div class="text">
+                    <p>Take a look at our beautiful pair of blue jeans in stock now!</p>
+                    <button onclick="window.location.href='items.html';" class="navigate-button">Go to Items</button>
+
+                </div>
+            </div>
+    </main>
+    
+    <script src="script.js"></script>
+    <div id="wordCountBox" class="word-count-box"></div>
+
+    <div class="ad-container">
+        <img src="assets/ad.jpeg" alt="Ad">
+    </div>
+</body>
+</html>

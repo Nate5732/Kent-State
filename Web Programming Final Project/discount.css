@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-logo {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.navbar-header {
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: white;
+    font-weight: normal;
+}
+
+nav a.active {
+    font-weight: bold;
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.game-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.game-container h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.game-container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3x3 grid of tiles */
+    gap: 20px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    perspective: 1000px;
+}
+
+.tile-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+}
+
+.tile.flipped .tile-inner {
+    transform: rotateY(180deg);
+}
+
+.tile-front,
+.tile-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tile-front {
+    font-size: 60px;
+    background-color: #ccc;
+    color: black;
+}
+
+.tile-back {
+    font-size: 20px;
+    background-color: #28a745;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* Play again button styling */
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* https://stackoverflow.com/questions/74274176/how-to-get-css-media-attributes-to-work-on-mobile-devices */
+/* Reference to stackoverflow website for help with media attribute creation to allow responsiveness with desktop and mobile.*/
+@media (max-width: 768px) {
+    .game-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .tiles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tile {
+        width: 80px;
+        height: 80px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+.ad-container {
+    width: 100%;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ad-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+.word-count-box {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+}

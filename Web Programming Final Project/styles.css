@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-logo {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.navbar-header {
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: white;
+}
+
+nav a.active {
+    font-weight: bold;
+    background-color: #555;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Product styling for featured items on RYUG home page */
+.product {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.product img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.product .text {
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Styling for login page */
+.login-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* History and Discounts page content styles */
+main h2 {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+}
+
+main p, .discount-list {
+    margin: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.discount-list {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.discount-list li {
+    margin: 10px 0;
+}
+
+/* https://stackoverflow.com/questions/74274176/how-to-get-css-media-attributes-to-work-on-mobile-devices */
+/* Reference to stackoverflow website for help with media attribute creation to allow responsiveness with desktop and mobile.*/
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .item-table th, .item-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .ka-ching-btn {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .nav-logo {
+        width: 80px;
+    }
+
+    .ad-container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .item-table {
+        font-size: 10px;
+    }
+
+    .product img {
+        width: 50px;
+    }
+
+    .ka-ching-btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .animated-box {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Styling for the items table */
+.item-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.item-table th, .item-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.item-table th {
+    background-color: #333;
+    color: white;
+}
+
+.item-table td {
+    background-color: #f4f4f4;
+}
+
+.item-image {
+    width: 100px;
+    height: auto;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+}
+
+.ad-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.ad-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Word count box styling */
+.word-count-box {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Button on home page to redirect to items page if user is interested in featured items*/
+.navigate-button {
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navigate-button:hover {
+    background-color: #555;
+}
+
+/* https://www.w3schools.com/css/css3_animations.asp*/
+/* Referenced W3schools for css animation. Changed to be red white and blue for a USA touch.*/
+@keyframes colorChange {
+    0%   {background-color: red;}
+    10%  {background-color: white;}
+    20%  {background-color: blue;}
+    30%  {background-color: red;}
+    40%  {background-color: white;}
+    50%  {background-color: red;}
+    60%  {background-color: white;}
+    70%  {background-color: blue;}
+    80%  {background-color: red;}
+    90%  {background-color: white;}
+    100% {background-color: red;}
+}
+
+.animated-box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation-name: colorChange;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    margin: 20px auto;
+    border: 5px solid black;
+}
+
+.animation-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.ka-ching-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ka-ching-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.ka-ching-btn:active {
+    transform: scale(0.95);
+}
+
+/* Scrolling text styling that is on history page */
+.scrolling-container {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    border: 2px solid #ddd;
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+}
+
+#scrollingText {
+    white-space: nowrap;
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    animation: scrollingText 10s linear infinite;
+}
+
+/* Keyframes for scrolling text */
+@keyframes scrollingText {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+.paused {
+    animation-play-state: paused !important;
+}
+

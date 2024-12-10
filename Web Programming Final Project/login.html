@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body onload="countWords()">
+    <div class="login-container">
+        <img src="assets/Logo.jpeg" alt="RYUG Logo" class="logo">
+        <h1>Welcome to RYUG</h1>
+        <form id="loginForm">
+            <label for="username">Username (It is 'username')</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password (It is 'password')</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="button" onclick="validateLogin()">Login</button>
+        </form>
+        <script src="script.js"></script>
+        <div id="wordCountBox" class="word-count-box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Discount</title>
+    <link rel="stylesheet" href="discount.css">
+</head>
+<body onload="countWords()">
+    <header>
+        <nav class="navbar">
+            <img src="assets/Logo.jpeg" alt="RYUG Logo" class="nav-logo">
+            <div class="navbar-header">
+                <h1>RYUG Store</h1>
+            </div>
+            <div class="nav-links">
+                <a href="RYUG.html">Home</a>
+                <a href="history.html">History</a>
+                <a href="discount.html" class="active">Discounts</a>
+                <a href="items.html">Items</a>
+                <a href="login.html">Logout</a>
+            </div>
+        </nav>
+    </header>
+    <div class="game-container">
+        <h2>Get Your Discount</h2>
+        <p>Click on a tile to discover your discount!</p>
+        <div class="tiles">
+        </div>
+        <button id="resetButton">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+    <div id="wordCountBox" class="word-count-box"></div>
+    <div class="ad-container">
+        <img src="assets/ad.gif" alt="Ad Gif" class="ad-gif">
+    </div>
+</body>
+</html>

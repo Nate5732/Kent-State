@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="countWords()">
+    <header>
+        <nav class="navbar">
+            <img src="assets/Logo.jpeg" alt="RYUG Logo" class="nav-logo">
+            <div class="navbar-header">
+                <h1>RYUG Store</h1>
+            </div>
+            <div class="nav-links">
+                <a href="RYUG.html">Home</a>
+                <a href="history.html">History</a>
+                <a href="discount.html">Discounts</a>
+                <a href="items.html" class="active">Items</a>
+                <a href="login.html">Logout</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>Our Featured Restored Clothing Items</h2>
+        
+        <form id="searchForm" onsubmit="filterTable(); return false;">
+            <input type="text" id="searchInput" placeholder="Search for an item...">
+            <button type="submit">Search</button>
+        </form>
+
+        <table id="itemTable" class="item-table">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Item Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="assets/boots.jpeg" alt="Boots" class="item-image"></td>
+                    <td>Black Boots</td>
+                    <td>Very stylish pair of black boots that match virtually any outfit!</td>
+                    <td class="price">$99.99</td>
+                </tr>
+                <tr>
+                    <td><img src="assets/cleats.jpeg" alt="Cleats" class="item-image"></td>
+                    <td>Cleats</td>
+                    <td>Stylish and useful cleats to be worn on grassy fields for sports.</td>
+                    <td class="price">$79.99</td>
+                </tr>
+                <tr>
+                    <td><img src="assets/coat.jpeg" alt="Coat" class="item-image"></td>
+                    <td>Winter Coat</td>
+                    <td>Very light orange colored winter coat for when the weather becomes bitter!</td>
+                    <td class="price">$109.99</td>
+                </tr>
+                <tr>
+                    <td><img src="assets/graphicT.jpeg" alt="graphicT" class="item-image"></td>
+                    <td>Graphic T-Shirt</td>
+                    <td>Graphic T-Shirt with a specific and fascinating design created by our team.</td>
+                    <td class="price">$49.99</td>
+                </tr>
+                <tr>
+                    <td><img src="assets/jeans.jpeg" alt="Jeans" class="item-image"></td>
+                    <td>Blue Jeans</td>
+                    <td>Comfortable pair of blue jeans that can pair with several outfits of your choosing.</td>
+                    <td class="price">$89.99</td>
+                </tr>
+                <tr>
+                    <td><img src="assets/sweatshirt.jpeg" alt="Sweatshirt" class="item-image"></td>
+                    <td>Black Sweatshirt</td>
+                    <td>Baggy stylish black sweatshirt to keep you looking cool while also keeping you warm!</td>
+                    <td class="price">$69.99</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <button id="kaChingButton" class="ka-ching-btn">Ka-Ching!</button>
+    <audio id="kaChingSound" src="assets/ka-ching.mp3"></audio>
+
+    <div id="wordCountBox" class="word-count-box"></div>
+
+    <div class="ad-container">
+        <img src="assets/ad.jpeg" alt="Ad">
+            <script src="script.js"></script>
+
+    </div>
+</body>
+</html>
