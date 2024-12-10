@@ -1,0 +1,328 @@
+/* Nathon Iadimarco */
+/* 11/27/2024 */
+/* Introduction to Database System Design */
+/* Final Project Application Implementation */
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styles */
+body {
+    background: linear-gradient(135deg, #1a1a1a, #333333);
+    background-size: auto;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto; /* Allowing scrolling mainly for transactions page when table gets too long*/
+    min-height: 100%;
+}
+
+
+/* Top Navigation Bar (used on home, withdraw, deposit, transactions) */
+.navbar {
+    width: 100%;
+    background-color: #0073e6;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #003f87;
+}
+
+.logout {
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.logout:hover {
+    color: #003f87;
+}
+
+/* Main Container for all pages */
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+/* Title Styles */
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+/* Description Styles */
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+/* Button Styles */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.large-button { /* Used on home page for Accessible pages */
+    display: inline-block;
+    background-color: #0073e6;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 250px;
+    transition: background-color 0.3s ease;
+}
+
+.large-button:hover { /* Implemeting hover feature on buttons */
+    background-color: #005bb5;
+}
+
+/* Forms */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Login submit button */
+.submit-button {
+    padding: 15px;
+    background-color: #0073e6;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover { /* Hover feature but on blue background of button */
+    background-color: #005bb5;
+}
+
+/* Back to Home button */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.back-button:hover {
+    background-color: #005bb5;
+}
+
+/* Transaction Table Styles (for transactions.php) */
+.transactions-page {
+    overflow-y: auto;
+    padding-bottom: 30px;
+}
+
+.table-wrapper { /* Wrapping table to fit nice on screen (main page for use of scrollling) */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.transaction-table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.transaction-table th, .transaction-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    white-space: nowrap; /* Keeping data sections one line */
+}
+
+.transaction-table th {
+    background-color: #0073e6;
+    color: white;
+}
+
+.transaction-table td {
+    background-color: #f4f4f4;
+    color: black; 
+    border: 1px solid black; /* Black borders around transaction cells */
+}
+
+.transaction-table tr:nth-child(even) td {
+    background-color: #e9ecef;
+}
+
+
+/* Login/Register Page Specific Styles */
+.login-register-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: #0073e6;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.login-register-container .title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.login-register-container .description {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #fff; /* Light text on blue box */
+    text-align: center;
+}
+
+.login-register-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-register-container input[type="text"],
+.login-register-container input[type="password"] {
+    padding: 15px;
+    font-size: 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.login-register-container .submit-button {
+    background-color: #005bb5;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-register-container .submit-button:hover {
+    background-color: #003f87;
+}
+
+.login-register-container .back-button {
+    margin-top: 15px;
+    background-color: #6c757d;
+}
+
+.login-register-container .back-button:hover {
+    background-color: #5a6268;
+}
+
+/* Home/Withdraw/Deposit/Transactions page specific styles */
+.home-transaction-container {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+    p
+}
+
+/* Change Balance button */
+.change-button {
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.change-button:hover { /* Same using hover but will enlarge slightly on hover */
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+.change-button:active {
+    transform: scale(0.95); /* Gives some user feedback on successful click */
+}
+
+
+
+/* Balance display and editing functionality on home page */
+.balance-input {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0073e6;
+    background: transparent;
+    border: 2px solid #0073e6;
+    border-radius: 12px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.balance-input:focus { /* Box makes it look changable */
+    outline: none;
+    border-color: #005bb5;
+    box-shadow: 0 4px 8px rgba(0, 91, 181, 0.4);
+}
+
+
+/* Dollar sign next to balance number box */
+.currency {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0073e6;
+    background: transparent;
+    margin-left: 180px;
+}
+

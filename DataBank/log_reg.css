@@ -1,0 +1,119 @@
+/* Nathon Iadimarco */
+/* 11/27/2024 */
+/* Introduction to Database System Design */
+/* Final Project Application Implementation */
+/* log_reg.css */
+
+/* Registration and Login Page Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Keeping below styles somewhat consistent throughout entire website */
+body {
+    background: linear-gradient(135deg, #1a1a1a, #333333); /* Gradient background */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #fff;
+    white-space: nowrap;
+}
+
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+.login-container {
+    width: 100%;
+    padding: 20px;
+    background: #0073e6;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+    margin-top: 20px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    padding: 15px;
+    font-size: 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.login-container input[type="submit"] {
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #005bb5;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #003f87;
+}
+
+.register-text {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.register-text a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.home-transaction-container {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
