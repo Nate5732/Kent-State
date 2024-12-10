@@ -1,0 +1,32 @@
+<div class="container" id="container" [ngClass]="{'active': isSignUp}">
+  <div class="form-container sign-up">
+    <form [formGroup]="signUpForm" (ngSubmit)="onSignUp()">
+      <h1>Create Account</h1>
+      <input type="text" placeholder="Name" formControlName="name">
+      <input type="email" placeholder="Email" formControlName="email">
+      <input type="password" placeholder="Password" formControlName="password">
+      <button type="submit" [disabled]="signUpForm.invalid || loading">Sign Up</button>
+    </form>
+  </div>
+  <div class="form-container sign-in">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <h1>Sign In</h1>
+      <input type="email" placeholder="Email" formControlName="email">
+      <input type="password" placeholder="Password" formControlName="password">
+      <button type="submit" [disabled]="loginForm.invalid || loading">Sign In</button>
+    </form>
+  </div>
+  <div class="toggle-container">
+    <div class="toggle">
+      <div class="toggle-panel toggle-left">
+        <h1>Click here to sign in!</h1>
+        <button (click)="toggleForm()">Sign In</button>
+      </div>
+      <div class="toggle-panel toggle-right">
+        <h1>Hello!</h1>
+        <p>Click here to register for an account</p>
+        <button (click)="toggleForm()">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>

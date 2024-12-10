@@ -1,0 +1,94 @@
+<div class="min-h-screen bg-gray-100">
+  <nav class="bg-blue-600 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-white text-2xl font-bold">BudgetingBenefits</h1>
+      <button class="text-white hover:text-blue-200" (click)="logout()">Logout</button>
+    </div>
+  </nav>
+
+  <div class="container mx-auto p-6">
+    <div class="bg-white rounded-lg shadow-2xl p-6 mb-6 flex justify-between items-center">
+      <div>
+        <h2 class="text-2xl font-semibold text-blue-800 mb-2">
+          Monthly Income: ${{ currentInc }}
+        </h2>
+        <p class="text-gray-600">Track and manage your monthly budget</p>
+      </div>
+      <button 
+        class="bg-blue-500 hover:bg-blue-600 text-white rounded-lg px-4 py-2 transition duration-300 shadow-md" 
+        (click)="editIncome()">
+        Edit Income
+      </button>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+      <div class="bg-white rounded-lg shadow-2xl p-6">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="text-lg font-semibold text-blue-800">Food Allocation</h3>
+          <button 
+            class="bg-blue-500 hover:bg-blue-600 text-white rounded-lg px-3 py-1 text-sm transition duration-300" 
+            (click)="editFoodAllocation()">
+            Edit
+          </button>
+        </div>
+        <p class="text-2xl font-bold text-blue-600 mb-4">$ {{ foodAllocation }}</p>
+        <app-allocation-bar-graph 
+          [allocation]="foodAllocation" 
+          [totalIncome]="currentInc"
+          [category]="'Food'">
+        </app-allocation-bar-graph>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-2xl p-6">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="text-lg font-semibold text-blue-800">Rent Allocation</h3>
+          <button 
+            class="bg-blue-500 hover:bg-blue-600 text-white rounded-lg px-3 py-1 text-sm transition duration-300" 
+            (click)="editRentAllocation()">
+            Edit
+          </button>
+        </div>
+        <p class="text-2xl font-bold text-blue-600 mb-4">$ {{ rentAllocation }}</p>
+        <app-allocation-bar-graph 
+          [allocation]="rentAllocation" 
+          [totalIncome]="currentInc"
+          [category]="'Rent'">
+        </app-allocation-bar-graph>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-2xl p-6">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="text-lg font-semibold text-blue-800">Bills Allocation</h3>
+          <button 
+            class="bg-blue-500 hover:bg-blue-600 text-white rounded-lg px-3 py-1 text-sm transition duration-300" 
+            (click)="editBillsAllocation()">
+            Edit
+          </button>
+        </div>
+        <p class="text-2xl font-bold text-blue-600 mb-4">$ {{ billsAllocation }}</p>
+        <app-allocation-bar-graph 
+          [allocation]="billsAllocation" 
+          [totalIncome]="currentInc"
+          [category]="'Bills'">
+        </app-allocation-bar-graph>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-2xl p-6">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="text-lg font-semibold text-blue-800">Other Allocation</h3>
+          <button 
+            class="bg-blue-500 hover:bg-blue-600 text-white rounded-lg px-3 py-1 text-sm transition duration-300" 
+            (click)="editOtherAllocation()">
+            Edit
+          </button>
+        </div>
+        <p class="text-2xl font-bold text-blue-600 mb-4">$ {{ otherAllocation }}</p>
+        <app-allocation-bar-graph 
+          [allocation]="otherAllocation" 
+          [totalIncome]="currentInc"
+          [category]="'Other'">
+        </app-allocation-bar-graph>
+      </div>
+    </div>
+  </div>
+</div>
